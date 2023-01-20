@@ -152,7 +152,7 @@ enviar_cookie();
                 <section id="sec-form">
                     <div class="form-inputs">
                         <div class="form-contain">
-                            <h1>Formulário para solicitação de instalação</h1>
+                            <h1>Formulário para solicitação de teste</h1>
                             </ br>
                             <!-- One "tab" for each step in the form: -->
                             <div class="tab subtitle">
@@ -169,7 +169,7 @@ enviar_cookie();
                                         </div>
                                         <div class="form-floating col-md-12">
                                             <input type="text" class="form-control" id="telefone" placeholder="TELEFONE"
-                                                name="telefone">
+                                                name="telefone" maxlength="15">
                                             <label for="telefone"
                                                 class="form-label telefone margin-label">TELEFONE</label>
                                         </div>
@@ -300,7 +300,6 @@ enviar_cookie();
     ano.innerHTML = anoAtual.getFullYear();
     </script>
 
-
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
@@ -365,12 +364,31 @@ enviar_cookie();
     $('.cep').mask(('00000-000'));
 
     //MASCARA TELEFONE
-    $(document).on('keydown', '#telefone', function(e) {
-        var digit = e.key.replace(/\D/g, '');
-        var value = $(this).val().replace(/\D/g, '');
-        var size = value.concat(digit).length;
-        $(this).mask((size <= 10) ? '(00)0000-0000' : '(00)00000-0000');
-    });
+    function mascara(o, f) {
+        v_obj = o
+        v_fun = f
+        setTimeout("execmascara()", 1)
+    }
+
+    function execmascara() {
+        v_obj.value = v_fun(v_obj.value)
+    }
+
+    function mtel(v) {
+        v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+        v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+        v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+        return v;
+    }
+
+    function id(el) {
+        return document.getElementById(el);
+    }
+    window.onload = function() {
+        id('telefone').onkeyup = function() {
+            mascara(this, mtel);
+        }
+    }
 
     $(document).ready(function() {
         var val = {
@@ -385,16 +403,6 @@ enviar_cookie();
                 cidade: "required",
                 estado: "required",
                 cep: "required",
-                marca: "required",
-                proposta: "required",
-                modelo: "required",
-                data: "required",
-                chassi: {
-                    required: true,
-                    minlength: 17,
-                    maxlength: 17,
-                },
-                placa: "required",
                 telefone: {
                     required: true,
                     minlength: 13
@@ -415,12 +423,6 @@ enviar_cookie();
                 cidade: "*Preenchimento obrigatório!",
                 cep: "*Preenchimento obrigatório!",
                 estado: "*Preenchimento obrigatório!",
-                modelo: "*Preenchimento obrigatório!",
-                proposta: "*Preenchimento obrigatório!",
-                placa: "*Preenchimento obrigatório!",
-                marca: "*Preenchimento obrigatório!",
-                data: "*Preenchimento obrigatório!",
-                hora: "*Preenchimento obrigatório!",
                 email: {
                     required: "*Preenchimento obrigatório!",
                     email: "Insira um e-mail válido!",
@@ -428,11 +430,6 @@ enviar_cookie();
                 telefone: {
                     required: "*Preenchimento obrigatório!",
                     minlength: "Deve possuir no mínimo 13 dígitos!"
-                },
-                chassi: {
-                    required: "*Preenchimento obrigatório!",
-                    minlength: "Este campo deve possuir 17 caracteres!",
-                    maxlength: "Este campo deve possuir 17 caracteres!"
                 }
             }
         }
@@ -457,6 +454,7 @@ enviar_cookie();
                     "estado": $('#estado').val(),
                     "email": $('#email').val(),
                     "telefone": $('#telefone').val(),
+
                 },
                 dataType: 'json',
                 beforeSend: function() {
@@ -464,16 +462,26 @@ enviar_cookie();
                         "<i class='fa fa-pulse fa-spinner'></i> Aguarde...");
                     $('#btn-enviar-formulario').attr('disabled', 'disabled');
                 },
-                success: function(response) {
-                    console.log(response);
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Proposta enviada com sucesso!',
-                        showConfirmButton: false,
-                        timer: 1500
-                    }).then((result) => {
-                        location.reload();
-                    })
+                success: function(result) {
+                    if (result.status == 'success') {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Formulário enviado com sucesso!',
+                            showConfirmButton: false,
+                            timer: 1000
+                        }).then((result) => {
+                            location.reload();
+                        })
+                    }
+                    if (result.status == 'error') {
+                        $('#btn-enviar-formulario').html("Enviar");
+                        $('#btn-enviar-formulario').removeAttr('disabled');
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Erro ao enviar a formulário!'
+                        })
+                    }
                 },
                 error: function(error) {
                     $('#btn-enviar-formulario').html("Enviar");
@@ -481,7 +489,7 @@ enviar_cookie();
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
-                        text: 'Erro ao enviar a proposta!'
+                        text: 'Erro ao enviar a formulário!'
                     })
                 }
             });
