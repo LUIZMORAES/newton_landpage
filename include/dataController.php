@@ -83,9 +83,6 @@ try {
         exit();
     }
 
-    $empresa = 'LCAM';
-    $nome    = 'LCAM';
-    $usuario = 'bancobv';
     $payload = $dados;
     $evento  = 'Inseriu o formulario no sistema ';
 
