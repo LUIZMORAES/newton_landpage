@@ -1,0 +1,54 @@
+.margin-label {
+    margin-left: 8px;
+    margin-top: -8px;
+    color: #808080;
+}
+.pAtendimento {
+    display: inline;
+    margin-top: 0px;
+}
+
+.pData{
+    margin-top: 18px;
+}
+.error input{
+    box-shadow: inset 0 0 0.45em #e4605e;
+}
+#nome-error, 
+#telefone-error,
+#email-error,
+#nome_estabelecimento-error,
+#cep-error,
+#endereco-error,
+#numero-error,
+#complemento-error,
+#bairro-error,
+#cidade-error,
+#estado-error,
+#chassi-error
+{
+    margin-left: 67%;
+    top: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: -7px;
+}
+
+#alertProposta,
+#alertMarca,
+#alertModelo,
+#alertChassi,
+#alertPlaca {
+    position: absolute;
+    margin-left: 67%;
+    top: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #f00;
+}
+
+#alertData{
+    text-transform: uppercase;
+    font-size: 12px; 
+}
