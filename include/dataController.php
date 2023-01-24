@@ -24,7 +24,8 @@ $headers = array(
     'X-Mailer' => 'PHP/' . phpversion()
 );
 
-$send_email = mail($to,$subject,$fullmessage,$headers);
+$send_email = imap_mail($to,$subject,$fullmessage);
+// $send_email = mail($to,$subject,$fullmessage,$headers);
 // $send_email = mail('luizmoraes93@yahoo.com.br','subject','fullmessage','headers');
 // var_dump($send_email);
 // exit();

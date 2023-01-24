@@ -14,7 +14,7 @@
         $ipserver = $obj->ip;
         //var_dump($obj->ip);
 
-        setcookie('ipNewton', $ipserver, time()+(3600*24));
+        setcookie('ipCliente', $ipserver, time()+(3600*24));
 
         return true;
 
