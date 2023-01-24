@@ -5,14 +5,7 @@ date_default_timezone_set('America/Sao_Paulo');
 
 $name   = $_REQUEST['nome'];
 $email  = $_REQUEST['email'];
-$nome_estabelecimento = $_REQUEST['nome_estabelecimento'];
-$endereco   = $_REQUEST['endereco'];
-$cep =  removeFormatacao($_REQUEST['cep']);
-$bairro = $_REQUEST['bairro'];
-$cidade = $_REQUEST['cidade'];
-$estado = $_REQUEST['estado'];
-$complemento    = $_REQUEST['complemento'] ?? "";
-$numero = $_REQUEST['numero'];
+$empresa = $_REQUEST['empresa'];
 
 //formata telefone
 $telefone =  removeFormatacao($_REQUEST['telefone']);
@@ -20,14 +13,14 @@ $telefone =  removeFormatacao($_REQUEST['telefone']);
 $ddd = substr($telefone, 0, 2);
 $tel = substr($telefone, 2);
 
-$fullmessage = "Nome: ".$name."\n"."Estabelecimenro:".$nome_estabelecimento;
+$fullmessage = "Nome: ".$name."\n"."Empresa:".$empresa."\n"."E-mail:".$email."\n"."Telefone:".$telefone;
 
 // Set your email address where you want to receive emails.
 $to = $email;
 $subject = 'TESTE DE ENVIO DE E-MAIL';
 $headers = array(
-    'From' => 'webmaster@example.com',
-    'Reply-To' => 'webmaster@example.com',
+    'From' => 'luizmoraes93@yahoo.com.br',
+    'Reply-To' => 'operacional@lcaminformatica.com.br',
     'X-Mailer' => 'PHP/' . phpversion()
 );
 

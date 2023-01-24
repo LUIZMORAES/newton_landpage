@@ -13,356 +13,208 @@ enviar_cookie();
 
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+
+    <!--====== Required meta tags ======-->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Newton | teste landpage</title>
-    <link rel="shortcut icon" href="img/lcam_ico.jpg" />
+    <!--====== Title ======-->
+    <title>LCAM</title>
 
-    <!-- load stylesheets -->
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/lcam_ico.jpg" type="image/jpg">
 
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
-    <link rel="stylesheet" href="css/tooplate-style.css"> <!-- Templatemo style -->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/multi-form.css?v2">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 
 </head>
 
 <body>
-    <div class="tm-main-content" id="top">
-        <div class="tm-top-bar-bg"></div>
-        <div class="tm-top-bar" id="tm-top-bar">
-            <!-- Top Navbar -->
-            <div class="container" id="divContainer">
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navgition navgition-transparent">
+            <div class="container">
                 <div class="row">
-                    <nav class="navbar navbar-expand-lg narbar-light">
-                        <a class="navbar-brand mr-auto" href="#">
-                            <img src="img/lp_menu.png" alt="LM">
-                        </a>
-                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
-                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/lcam_ico.jpg" alt="Logo">
+                            </a>
 
-                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#top">Início <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-4">Passo a passo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">Termos e condições</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-6">Formulário</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-7">Contato</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#top">Voltar</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne"
+                                aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
 
-        <div class="tm-section tm-bg-img" id="tm-section-1">
-            <section id="sec-oque">
-                <div class="container oque-contain oque-conteudo">
-                    <h2>Esse formulário tem que disparar o lead e terá que ter a versão mobile do layout.</h2>
-                    <h3>É simples e fácil.</h3>
-                    <i class="fa fa-arrow-down fa-5x text-blue" aria-hidden="true"></i>
-                </div>
-            </section>
-        </div>
-    </div>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">CONTATO</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-    <div class="tm-section tm-section-pad" id="tm-section-4">
-        <section id="sec-passoapasso">
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navgition -->
+
+        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/header-bg.png)">
             <div class="container">
-                <h2>Passo a passo para preencher o formulário </h2>
-                <div class="passos-desk">
-                    <div class="passo-card">
-                        <i class="fa fa-folder-open fa-5x" aria-hidden="true"></i>
-                        <h3>Passo 1</h3>
-                        <p>Preencha o formulário abaixo e envie sua solicitação</p>
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="header-content text-center">
+                            <h3 class="header-title">Teste de land page</h3>
+                            <p class="text">Modelo simples com mobile!</p>
+                        </div> <!-- header content -->
                     </div>
-                    <div class="passo-info">
-                        <p>Aguarde o e-mail.</p>
-                        <div class="linha-passo"></div>
-                        <p style="visibility: hidden;"></p>
-                    </div>
-                    <div class="passo-card">
-                        <i class="fa fa-home fa-5x" aria-hidden="true"></i>
-                        <h3>Passo 2</h3>
-                        <p>Pronto!</br>E-mail chegou ok </p>
-                    </div>
-                    <div class="passo-info">
-                        <p>E-mail não chegou.</p>
-                        <div class="linha-passo"></div>
-                        <p style="visibility: hidden;"></p>
-                    </div>
-                    <div class="passo-card">
-                        <i class="fa fa-money fa-5x" aria-hidden="true"></i>
-                        <h3>Passo 3</h3>
-                        <p>Não chegou!</br>
-                            Enviar novamente com outro e-mail !</p>
-                    </div>
-                </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-shape">
+                <img src="assets/images/header-shape.svg" alt="shape">
             </div>
-        </section>
-    </div>
+        </div> <!-- header content -->
+    </header>
 
-    <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-5">
-        <section id="sec-recomendacoes">
-            <div class="container">
-                <h2>Termos e condições</h2>
-                <ul>
-                    <li>O responsável deverá preencher <b>todos os dados corretamente !</b></br></li>
-                    <li>Ao digitar <b>o cep correto, será preenchido automaticamente !</b></br></li>
-                </ul>
-                <div class="container oque-contain oque-conteudo">
-                    <i class="fa fa-arrow-down fa-5x text-blue" aria-hidden="true"></i>
-                </div>
-            </div>
-        </section>
-    </div>
+    <!--====== HEADER PART ENDS ======-->
 
-    <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-6">
+    <!--====== CONTACT PART START ======-->
 
+    <section id="contact" class="contact-area">
         <div class="container">
-            <form id="formCadastro">
-                <section id="sec-form">
-                    <div class="form-inputs">
-                        <div class="form-contain">
-                            <h1>Formulário para solicitação de teste</h1>
-                            </ br>
-                            <!-- One "tab" for each step in the form: -->
-                            <div class="tab subtitle">
-                                <h3>
-                                    Informações do responsável
-                                </h3>
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="nome"
-                                                placeholder="NOME DO RESPONSÁVEL" name="nome">
-                                            <label for="nome" class="form-label margin-label">NOME DO
-                                                RESPONSÁVEL</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="telefone" placeholder="TELEFONE"
-                                                name="telefone" maxlength="15">
-                                            <label for="telefone"
-                                                class="form-label telefone margin-label">TELEFONE</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="email" class="form-control" id="email" placeholder="E-MAIL"
-                                                name="email">
-                                            <label for="email" class="form-label margin-label">E-MAIL</label>
-                                        </div>
-                                    </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-10">
+                        <h4 class="title">Entre em contato</h4>
+                        <p class="text">Por gentileza digitar os dados corretos!</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form id="formCadastro" data-toggle="validator">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single-form form-group">
+                                        <input type="text" id="nome" name="nome" placeholder="Nome"
+                                            data-error="Nome requerido." required="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div> <!-- single form -->
                                 </div>
-                            </div>
-                            <div class="tab">
-                                <h3>
-                                    Informações
-                                </h3>
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control"
-                                                placeholder="NOME DO ESTABELECIMENTO:" id="nome_estabelecimento"
-                                                name="nome_estabelecimento">
-                                            <label for="inputEstabelecimento" class="margin-label">NOME DO
-                                                ESTABELECIMENTO</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control cep" id="cep" placeholder="CEP"
-                                                name="cep" onChange="getCEP()">
-                                            <label for="inputCep" class="form-label margin-label">CEP</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="endereco" placeholder="ENDEREÇO"
-                                                name="endereco">
-                                            <label for="inputEndereco" class="form-label margin-label">ENDEREÇO</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="numero" placeholder="NÚMERO"
-                                                name="numero">
-                                            <label for="inputNumero" class="form-label margin-label">NÚMERO</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="complemento"
-                                                placeholder="COMPLEMENTO" name="complemento">
-                                            <label for="inputComplemento"
-                                                class="form-label margin-label">COMPLEMENTO</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="bairro" placeholder="BAIRRO"
-                                                name="bairro">
-                                            <label for="inputBairro" class="form-label margin-label">BAIRRO</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="cidade" placeholder="CIDADE"
-                                                name="cidade">
-                                            <label for="inputCidade" class="form-label margin-label">CIDADE</label>
-                                        </div>
-                                        <div class="form-floating col-md-12">
-                                            <input type="text" class="form-control" id="estado" placeholder="ESTADO"
-                                                name="estado">
-                                            <label for="inputEstado" class="form-label margin-label">ESTADO</label>
-                                        </div>
-                                    </div>
+                                <div class="col-md-6">
+                                    <div class="single-form form-group">
+                                        <input type="email" id="email" name="email" placeholder="E-mail"
+                                            data-error="Email requerido." required="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div> <!-- single form -->
                                 </div>
-                            </div>
-                            <div class="form-btn">
-                                <div style="overflow:auto;">
-                                    <div style="float:right; margin-top: 5px;">
-                                        <button type="button" class="previous">Voltar</button>
-                                        <button type="button" class="next">Avançar</button>
-                                        <button type="button" id="btn-enviar-formulario" class="submit">Enviar</button>
-                                    </div>
+                                <div class="col-md-6">
+                                    <div class="single-form form-group">
+                                        <input type="text" id="nome_empresa" name="nome_empresa" placeholder="Empresa"
+                                            data-error="Empresa requerido." required="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div> <!-- single form -->
                                 </div>
-                            </div>
-                            <!-- Circles which indicates the steps of the form: -->
-                            <div style="text-align:center;margin-top:40px;">
-                                <span class="step">1</span>
-                                <span class="step">2</span>
-                            </div>
-                        </div>
-                    </div>
-            </form>
-        </div>
-        </section>
-    </div>
+                                <div class="col-md-6">
+                                    <div class="single-form form-group">
+                                        <input type="text" id="telefone" name="telefone" maxlength="15"
+                                            placeholder="Telefone" data-error="Telefone requerido." required="required">
+                                        <div class="help-block with-errors"></div>
+                                    </div> <!-- single form -->
+                                </div>
+                                <p class="form-message"></p>
+                                <div class="col-md-12">
+                                    <div class="single-form form-group text-center">
+                                        <button type="button" id="btn-enviar-formulario" class="main-btn">Enviar
+                                            informação</button>
+                                    </div> <!-- single form -->
+                                </div>
+                            </div> <!-- row -->
+                        </form>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- conteiner -->
+    </section>
 
-    <section id="contatos">
-        <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-7">
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+
+        <div class="footer-copyright">
             <div class="container">
-                <h2>Contato</h2>
                 <div class="row">
-                    <div class="contatos-contain">
-                        <div class="contato-sat">
-                            <h3>LCAM</h3>
-                            <p id='footer'>
-                                Email: comercial@lcaminformatica.com.br<br>
+                    <div class="col-lg-12">
+                        <div class="copyright text-center">
+                            <p class="text">Modelo de teste <a rel="nofollow"
+                                    href="https://landpage.lcaminformatica.com.br">LCAM
+                                    INFORMÁTICA
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
 
-    <section id="footer-amp">
-        <footer class="jsx-1268163409" style="padding: 0 0 41px 0 !important;">
-            <div class="endereco">
-                <p>Copyright © <span id="ano"></span> LCAM INFORMÁTICA.</p>
-            </div>
-            </div>
-        </footer>
-    </section>
+    <!--====== FOOTER PART ENDS ======-->
 
-    <!-- load JS files -->
+    <!--====== BACK TO TOP PART START ======-->
+
+    <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TO TOP PART ENDS ======-->
+
+    <!--====== jquery js ======-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="js/jquery-1.11.3.min.js"></script> <!-- jQuery (https://jquery.com/download/) -->
-    <script src="js/popper.min.js"></script> <!-- https://popper.js.org/ -->
-    <script src="js/bootstrap.min.js"></script> <!-- https://getbootstrap.com/ -->
-    <script src="js/datepicker.min.js"></script> <!-- https://github.com/qodesmith/datepicker -->
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-    <script src="slick/slick.min.js"></script> <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 
-    <script>
-    const ano = document.getElementById("ano");
-    const anoAtual = new Date();
-    ano.innerHTML = anoAtual.getFullYear();
-    </script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-    <!-- Inclusão do Plugin jQuery Validation-->
-    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/multi-form.js?v2"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
 
     <script type="text/javascript">
-    function getCEP() {
-        let cep = document.getElementById("cep").value;
-        qtCep = cep.length;
-        if (qtCep === 9) {
-
-            regCep = regexCEP(cep);
-            var url = "https://viacep.com.br/ws/" + cep + "/json/";
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", url, false);
-            xhttp.send();
-
-            var data = JSON.parse(xhttp.responseText);
-            if (!data.erro == true) {
-                document.getElementById("endereco").value = data.logradouro;
-                document.getElementById("bairro").value = data.bairro;
-                document.getElementById("cidade").value = data.localidade;
-                document.getElementById("estado").value = data.uf;
-            }
-        }
-    }
-
-    function regexCEP(cep) {
-        const regex = new RegExp('[0-9]', 'gm')
-        const str = cep;
-        let m;
-        while ((m = regex.exec(str)) !== null) {
-            if (m.index === regex.lastIndex) {
-                regex.lastIndex++;
-            }
-        }
-        return m;
-    }
-
-    $(function() {
-        $("#data").datepicker({
-            minDate: 1,
-            dateFormat: 'dd/mm/yy',
-            dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
-            dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
-            dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
-            monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto',
-                'Setembro', 'Outubro', 'Novembro', 'Dezembro'
-            ],
-            monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out',
-                'Nov', 'Dez'
-            ],
-            nextText: 'Proximo',
-            prevText: 'Anterior',
-        })
-    });
-
-    //MASCARA CEP
-    $('.cep').mask(('00000-000'));
-
     //MASCARA TELEFONE
     function mascara(o, f) {
         v_obj = o
@@ -390,100 +242,34 @@ enviar_cookie();
         }
     }
 
-    $(document).ready(function() {
-        var val = {
-            // Specify validation rules
-            rules: {
-                nome: "required",
-                nome_estabelecimento: "required",
-                endereco: "required",
-                numero: "required",
-                complemento: "required",
-                bairro: "required",
-                cidade: "required",
-                estado: "required",
-                cep: "required",
-                telefone: {
-                    required: true,
-                    minlength: 13
-                },
-                email: {
-                    required: true,
-                    email: true
-                }
+    $('#btn-enviar-formulario').click(function() {
+        $.ajax({
+            type: "POST",
+            url: "include/dataController.php",
+            data: {
+                "nome": $('#nome').val(),
+                "empresa": $('#empresa').val(),
+                "email": $('#email').val(),
+                "telefone": $('#telefone').val(),
             },
-            // Specify validation error messages
-            messages: {
-                nome: "*Preenchimento obrigatório!",
-                nome_estabelecimento: "*Preenchimento obrigatório!",
-                endereco: "*Preenchimento obrigatório!",
-                numero: "*Preenchimento obrigatório!",
-                complemento: "*Preenchimento obrigatório!",
-                bairro: "*Preenchimento obrigatório!",
-                cidade: "*Preenchimento obrigatório!",
-                cep: "*Preenchimento obrigatório!",
-                estado: "*Preenchimento obrigatório!",
-                email: {
-                    required: "*Preenchimento obrigatório!",
-                    email: "Insira um e-mail válido!",
-                },
-                telefone: {
-                    required: "*Preenchimento obrigatório!",
-                    minlength: "Deve possuir no mínimo 13 dígitos!"
+            dataType: 'json',
+            beforeSend: function() {
+                $('#btn-enviar-formulario').html(
+                    "<i class='fa fa-pulse fa-spinner'></i> Aguarde...");
+                $('#btn-enviar-formulario').attr('disabled', 'disabled');
+            },
+            success: function(result) {
+                if (result.status == 'success') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Formulário enviado com sucesso!',
+                        showConfirmButton: false,
+                        timer: 1000
+                    }).then((result) => {
+                        location.reload();
+                    })
                 }
-            }
-        }
-
-        $("#formCadastro").multiStepForm({
-            validations: val,
-        }).navigateTo(0);
-
-        $('#btn-enviar-formulario').click(function() {
-            $.ajax({
-                type: "POST",
-                url: "include/dataController.php",
-                data: {
-                    "nome": $('#nome').val(),
-                    "nome_estabelecimento": $('#nome_estabelecimento').val(),
-                    "endereco": $('#endereco').val(),
-                    "numero": $('#numero').val(),
-                    "complemento": $('#complemento').val(),
-                    "bairro": $('#bairro').val(),
-                    "cidade": $('#cidade').val(),
-                    "cep": $('#cep').val(),
-                    "estado": $('#estado').val(),
-                    "email": $('#email').val(),
-                    "telefone": $('#telefone').val(),
-
-                },
-                dataType: 'json',
-                beforeSend: function() {
-                    $('#btn-enviar-formulario').html(
-                        "<i class='fa fa-pulse fa-spinner'></i> Aguarde...");
-                    $('#btn-enviar-formulario').attr('disabled', 'disabled');
-                },
-                success: function(result) {
-                    if (result.status == 'success') {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Formulário enviado com sucesso!',
-                            showConfirmButton: false,
-                            timer: 1000
-                        }).then((result) => {
-                            location.reload();
-                        })
-                    }
-                    if (result.status == 'error') {
-                        $('#btn-enviar-formulario').html("Enviar");
-                        $('#btn-enviar-formulario').removeAttr('disabled');
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...',
-                            text: 'Erro ao enviar a formulário!'
-                        })
-                    }
-                },
-                error: function(error) {
+                if (result.status == 'error') {
                     $('#btn-enviar-formulario').html("Enviar");
                     $('#btn-enviar-formulario').removeAttr('disabled');
                     Swal.fire({
@@ -492,10 +278,20 @@ enviar_cookie();
                         text: 'Erro ao enviar a formulário!'
                     })
                 }
-            });
+            },
+            error: function(error) {
+                $('#btn-enviar-formulario').html("Enviar");
+                $('#btn-enviar-formulario').removeAttr('disabled');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Erro ao enviar a formulário!'
+                })
+            }
         });
     });
     </script>
+
 
 </body>
 
